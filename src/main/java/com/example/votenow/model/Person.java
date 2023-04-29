@@ -17,7 +17,7 @@ public class Person {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
     private String name;
     private String document;
     @Enumerated(EnumType.STRING)

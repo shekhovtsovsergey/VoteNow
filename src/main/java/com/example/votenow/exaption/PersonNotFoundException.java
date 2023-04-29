@@ -2,7 +2,7 @@ package com.example.votenow.exaption;
 
 public class PersonNotFoundException extends ObjectNotFoundException {
 
-    public PersonNotFoundException(Long personId) {
+    public PersonNotFoundException(Integer personId) {
         super(String.format("Person id %s not found", personId));
     }
 

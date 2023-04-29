@@ -29,7 +29,7 @@ public class PersonServiceImpl implements PersonService {
 
     @Override
     @Transactional
-    public List<PersonDto> deletePersonById(Long id) {
+    public List<PersonDto> deletePersonById(Integer id) {
         return personDao.findAll().stream().map(personConverter::entityToDto).collect(Collectors.toList());
     }
 
@@ -49,7 +49,7 @@ public class PersonServiceImpl implements PersonService {
 
 
     @Override
-    public PersonDto getPersonById(Long id) throws PersonNotFoundException {
+    public PersonDto getPersonById(Integer id) throws PersonNotFoundException {
         return personConverter.entityToDto(personDao.findById(id).orElseThrow(() -> new PersonNotFoundException(id)));
     }
 }

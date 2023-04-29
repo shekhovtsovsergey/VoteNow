@@ -24,12 +24,12 @@ public class PersonRestController {
     }
 
     @GetMapping("/api/v1/person/{id}")
-    public PersonDto getPersonById(@PathVariable(name = "id") Long id) throws PersonNotFoundException {
+    public PersonDto getPersonById(@PathVariable(name = "id") Integer id) throws PersonNotFoundException {
         return personService.getPersonById(id);
     }
 
     @DeleteMapping("/api/v1/person/{id}")
-    public void deletePersonById(@PathVariable(name = "id") Long id) {
+    public void deletePersonById(@PathVariable(name = "id") Integer id) {
         personService.deletePersonById(id);
     }
 

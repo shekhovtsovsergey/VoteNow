@@ -17,7 +17,7 @@ import java.util.Objects;
 @AllArgsConstructor
 public class PersonDto {
 
-    private Long id;
+    private Integer id;
     @NotNull
     private String name;
     @NotNull

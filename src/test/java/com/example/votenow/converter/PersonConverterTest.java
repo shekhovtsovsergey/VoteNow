@@ -25,14 +25,14 @@ public class PersonConverterTest {
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.initMocks(this);
-        when(person.getId()).thenReturn(1L);
+        when(person.getId()).thenReturn(1);
         when(person.getName()).thenReturn("John");
         when(person.getDocument()).thenReturn("123456789");
-        when(person.getVoteType()).thenReturn(VoteType.Yes);
-        when(personDto.getId()).thenReturn(1L);
+        when(person.getVoteType()).thenReturn(VoteType.YES);
+        when(personDto.getId()).thenReturn(1);
         when(personDto.getName()).thenReturn("John");
         when(personDto.getDocument()).thenReturn("123456789");
-        when(personDto.getVoteType()).thenReturn(VoteType.Yes);
+        when(personDto.getVoteType()).thenReturn(VoteType.YES);
     }
 
     @Test

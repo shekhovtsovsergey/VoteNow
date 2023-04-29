@@ -7,8 +7,8 @@ import java.util.List;
 public interface PersonService {
 
     List<PersonDto> getAllPersons();
-    List<PersonDto> deletePersonById(Long id);
+    List<PersonDto> deletePersonById(Integer id);
     PersonDto createPerson(PersonDto personDto) ;
     PersonDto updatePerson(PersonDto personDto) ;
-    PersonDto getPersonById(Long id) throws PersonNotFoundException;
+    PersonDto getPersonById(Integer id) throws PersonNotFoundException;
 }
