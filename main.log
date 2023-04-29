@@ -1,0 +1,289 @@
+2023-04-29 19:25:40.748 INFO VoteApplication - Starting VoteApplication using Java 15.0.2 on MacBook-Pro-Sergej.local with PID 34593 (/Users/shehovtsovsu/Desktop/Solvery/Vote/Vote/build/classes/java/main started by shehovtsovsu in /Users/shehovtsovsu/Desktop/Solvery/Vote/Vote)
+2023-04-29 19:25:40.751 INFO VoteApplication - No active profile set, falling back to default profiles: default
+2023-04-29 19:25:42.071 INFO RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-29 19:25:42.131 INFO RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2023-04-29 19:25:42.628 INFO TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-29 19:25:42.640 INFO StandardService - Starting service [Tomcat]
+2023-04-29 19:25:42.640 INFO StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-04-29 19:25:42.773 INFO [/] - Initializing Spring embedded WebApplicationContext
+2023-04-29 19:25:42.773 INFO ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1910 ms
+2023-04-29 19:25:42.908 INFO HikariDataSource - HikariPool-1 - Starting...
+2023-04-29 19:25:43.148 INFO HikariDataSource - HikariPool-1 - Start completed.
+2023-04-29 19:25:43.154 INFO H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:mydatabase'
+2023-04-29 19:25:43.260 INFO VersionPrinter - Flyway Community Edition 7.7.3 by Redgate
+2023-04-29 19:25:43.286 INFO DatabaseType - Database: jdbc:h2:mem:mydatabase (H2 1.4)
+2023-04-29 19:25:43.358 INFO DbValidate - Successfully validated 2 migrations (execution time 00:00.033s)
+2023-04-29 19:25:43.369 INFO JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2023-04-29 19:25:43.392 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:25:43.396 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:25:43.409 INFO DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+2023-04-29 19:25:43.413 INFO DbMigrate - Migrating schema "PUBLIC" to version "1 - schema migration"
+2023-04-29 19:25:43.414 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:25:43.420 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:25:43.440 INFO DbMigrate - Migrating schema "PUBLIC" to version "2 - data migration"
+2023-04-29 19:25:43.440 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:25:43.441 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:25:43.441 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:25:43.441 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:25:43.441 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:25:43.442 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:25:43.442 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:25:43.442 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:25:43.443 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:25:43.443 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:25:43.444 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:25:43.445 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:25:43.445 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:25:43.446 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:25:43.458 INFO DbMigrate - Successfully applied 2 migrations to schema "PUBLIC", now at version v2 (execution time 00:00.054s)
+2023-04-29 19:25:43.539 INFO LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-29 19:25:43.609 INFO Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2023-04-29 19:25:43.769 INFO Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-29 19:25:43.895 INFO Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-04-29 19:25:44.472 INFO JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-29 19:25:44.481 INFO LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-29 19:25:44.903 WARN AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerAdapter' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'messageConverters' defined in class path resource [org/springframework/boot/autoconfigure/http/HttpMessageConvertersAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.http.HttpMessageConverters]: Factory method 'messageConverters' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mappingJackson2HttpMessageConverter' defined in class path resource [org/springframework/boot/autoconfigure/http/JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration.class]: Unsatisfied dependency expressed through method 'mappingJackson2HttpMessageConverter' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jacksonObjectMapper' defined in class path resource [org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration$JacksonObjectMapperConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.fasterxml.jackson.databind.ObjectMapper] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93]
+2023-04-29 19:25:44.903 INFO LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-29 19:25:44.906 INFO HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-29 19:25:44.909 INFO HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-29 19:25:44.910 INFO StandardService - Stopping service [Tomcat]
+2023-04-29 19:25:44.933 INFO ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-29 19:25:44.963 ERROR SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerAdapter' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'messageConverters' defined in class path resource [org/springframework/boot/autoconfigure/http/HttpMessageConvertersAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.http.HttpMessageConverters]: Factory method 'messageConverters' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mappingJackson2HttpMessageConverter' defined in class path resource [org/springframework/boot/autoconfigure/http/JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration.class]: Unsatisfied dependency expressed through method 'mappingJackson2HttpMessageConverter' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jacksonObjectMapper' defined in class path resource [org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration$JacksonObjectMapperConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.fasterxml.jackson.databind.ObjectMapper] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.example.vote.VoteApplication.main(VoteApplication.java:10)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'messageConverters' defined in class path resource [org/springframework/boot/autoconfigure/http/HttpMessageConvertersAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.http.HttpMessageConverters]: Factory method 'messageConverters' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mappingJackson2HttpMessageConverter' defined in class path resource [org/springframework/boot/autoconfigure/http/JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration.class]: Unsatisfied dependency expressed through method 'mappingJackson2HttpMessageConverter' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jacksonObjectMapper' defined in class path resource [org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration$JacksonObjectMapperConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.fasterxml.jackson.databind.ObjectMapper] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'messageConverters' defined in class path resource [org/springframework/boot/autoconfigure/http/HttpMessageConvertersAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.http.HttpMessageConverters]: Factory method 'messageConverters' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mappingJackson2HttpMessageConverter' defined in class path resource [org/springframework/boot/autoconfigure/http/JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration.class]: Unsatisfied dependency expressed through method 'mappingJackson2HttpMessageConverter' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jacksonObjectMapper' defined in class path resource [org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration$JacksonObjectMapperConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.fasterxml.jackson.databind.ObjectMapper] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.getIfAvailable(DefaultListableBeanFactory.java:2021)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.ifAvailable(DefaultListableBeanFactory.java:2032)
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.configureMessageConverters(WebMvcAutoConfiguration.java:232)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurerComposite.configureMessageConverters(WebMvcConfigurerComposite.java:137)
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.configureMessageConverters(DelegatingWebMvcConfiguration.java:118)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.getMessageConverters(WebMvcConfigurationSupport.java:865)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.requestMappingHandlerAdapter(WebMvcConfigurationSupport.java:673)
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration.requestMappingHandlerAdapter(WebMvcAutoConfiguration.java:423)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.http.HttpMessageConverters]: Factory method 'messageConverters' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mappingJackson2HttpMessageConverter' defined in class path resource [org/springframework/boot/autoconfigure/http/JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration.class]: Unsatisfied dependency expressed through method 'mappingJackson2HttpMessageConverter' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jacksonObjectMapper' defined in class path resource [org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration$JacksonObjectMapperConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.fasterxml.jackson.databind.ObjectMapper] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 44 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mappingJackson2HttpMessageConverter' defined in class path resource [org/springframework/boot/autoconfigure/http/JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration.class]: Unsatisfied dependency expressed through method 'mappingJackson2HttpMessageConverter' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jacksonObjectMapper' defined in class path resource [org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration$JacksonObjectMapperConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.fasterxml.jackson.databind.ObjectMapper] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1562)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1406)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.resolveStream(DefaultListableBeanFactory.java:2108)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.orderedStream(DefaultListableBeanFactory.java:2102)
+	at org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration.messageConverters(HttpMessageConvertersAutoConfiguration.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 45 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jacksonObjectMapper' defined in class path resource [org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration$JacksonObjectMapperConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.fasterxml.jackson.databind.ObjectMapper] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 67 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.fasterxml.jackson.databind.ObjectMapper] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:417)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:388)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	... 77 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/fasterxml/jackson/core/exc/StreamWriteException
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3325)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2466)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 83 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.core.exc.StreamWriteException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:606)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 87 common frames omitted
+2023-04-29 19:34:29.045 INFO VoteApplication - Starting VoteApplication using Java 15.0.2 on MacBook-Pro-Sergej.local with PID 35196 (/Users/shehovtsovsu/Desktop/Solvery/Vote/Vote/build/classes/java/main started by shehovtsovsu in /Users/shehovtsovsu/Desktop/Solvery/Vote/Vote)
+2023-04-29 19:34:29.047 INFO VoteApplication - No active profile set, falling back to default profiles: default
+2023-04-29 19:34:29.986 INFO RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-29 19:34:30.055 INFO RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interfaces.
+2023-04-29 19:34:30.528 INFO TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-29 19:34:30.537 INFO StandardService - Starting service [Tomcat]
+2023-04-29 19:34:30.538 INFO StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-04-29 19:34:30.657 INFO [/] - Initializing Spring embedded WebApplicationContext
+2023-04-29 19:34:30.657 INFO ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1575 ms
+2023-04-29 19:34:30.800 INFO HikariDataSource - HikariPool-1 - Starting...
+2023-04-29 19:34:30.989 INFO HikariDataSource - HikariPool-1 - Start completed.
+2023-04-29 19:34:30.995 INFO H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:mydatabase'
+2023-04-29 19:34:31.105 INFO VersionPrinter - Flyway Community Edition 7.7.3 by Redgate
+2023-04-29 19:34:31.132 INFO DatabaseType - Database: jdbc:h2:mem:mydatabase (H2 1.4)
+2023-04-29 19:34:31.196 INFO DbValidate - Successfully validated 2 migrations (execution time 00:00.029s)
+2023-04-29 19:34:31.208 INFO JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2023-04-29 19:34:31.230 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:34:31.234 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:34:31.250 INFO DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+2023-04-29 19:34:31.252 INFO DbMigrate - Migrating schema "PUBLIC" to version "1 - schema migration"
+2023-04-29 19:34:31.253 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:34:31.257 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:34:31.273 INFO DbMigrate - Migrating schema "PUBLIC" to version "2 - data migration"
+2023-04-29 19:34:31.274 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:34:31.274 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:34:31.274 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:34:31.275 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:34:31.275 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:34:31.275 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:34:31.275 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:34:31.276 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:34:31.276 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:34:31.276 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:34:31.277 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:34:31.277 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:34:31.278 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:34:31.278 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:34:31.290 INFO DbMigrate - Successfully applied 2 migrations to schema "PUBLIC", now at version v2 (execution time 00:00.045s)
+2023-04-29 19:34:31.366 INFO LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-29 19:34:31.430 INFO Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2023-04-29 19:34:31.600 INFO Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-29 19:34:31.758 INFO Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-04-29 19:34:32.326 INFO JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-29 19:34:32.335 INFO LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-29 19:34:33.012 INFO EndpointLinksResolver - Exposing 5 endpoint(s) beneath base path '/actuator'
+2023-04-29 19:34:33.060 INFO TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-29 19:34:33.075 INFO VoteApplication - Started VoteApplication in 4.553 seconds (JVM running for 5.732)
+2023-04-29 19:34:33.172 INFO [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-29 19:34:33.172 INFO DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-29 19:34:33.173 INFO DispatcherServlet - Completed initialization in 1 ms
+2023-04-29 19:35:00.062 INFO LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-29 19:35:00.065 INFO HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-29 19:35:00.072 INFO HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-29 19:45:08.096 INFO PersonRestControllerTest - Starting PersonRestControllerTest using Java 15.0.2 on MacBook-Pro-Sergej.local with PID 35882 (started by shehovtsovsu in /Users/shehovtsovsu/Desktop/Solvery/Vote/Vote)
+2023-04-29 19:45:08.100 INFO PersonRestControllerTest - No active profile set, falling back to default profiles: default
+2023-04-29 19:45:09.667 INFO SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2023-04-29 19:45:09.668 INFO TestDispatcherServlet - Initializing Servlet ''
+2023-04-29 19:45:09.669 INFO TestDispatcherServlet - Completed initialization in 1 ms
+2023-04-29 19:45:09.695 INFO PersonRestControllerTest - Started PersonRestControllerTest in 2.177 seconds (JVM running for 3.977)
+2023-04-29 19:45:10.042 ERROR PersonRestController - Person NOt Found, check your request
+2023-04-29 19:45:27.354 INFO PersonRestControllerTest - Starting PersonRestControllerTest using Java 15.0.2 on MacBook-Pro-Sergej.local with PID 35909 (started by shehovtsovsu in /Users/shehovtsovsu/Desktop/Solvery/Vote/Vote)
+2023-04-29 19:45:27.355 INFO PersonRestControllerTest - No active profile set, falling back to default profiles: default
+2023-04-29 19:45:28.884 INFO SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2023-04-29 19:45:28.885 INFO TestDispatcherServlet - Initializing Servlet ''
+2023-04-29 19:45:28.887 INFO TestDispatcherServlet - Completed initialization in 2 ms
+2023-04-29 19:45:28.911 INFO PersonRestControllerTest - Started PersonRestControllerTest in 1.901 seconds (JVM running for 3.291)
+2023-04-29 19:45:29.243 ERROR PersonRestController - Person NOt Found, check your request
+2023-04-29 19:54:28.582 INFO VoteNowApplication - Starting VoteNowApplication using Java 17.0.1 on MacBook-Pro-Sergej.local with PID 36544 (/Users/shehovtsovsu/Desktop/Solvery/VoteNow/build/classes/java/main started by shehovtsovsu in /Users/shehovtsovsu/Desktop/Solvery/VoteNow)
+2023-04-29 19:54:28.585 INFO VoteNowApplication - No active profile set, falling back to default profiles: default
+2023-04-29 19:54:32.507 INFO RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-29 19:54:32.680 INFO RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 143 ms. Found 1 JPA repository interfaces.
+2023-04-29 19:54:34.609 INFO TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-29 19:54:34.634 INFO StandardService - Starting service [Tomcat]
+2023-04-29 19:54:34.634 INFO StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-04-29 19:54:35.472 INFO [/] - Initializing Spring embedded WebApplicationContext
+2023-04-29 19:54:35.473 INFO ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6778 ms
+2023-04-29 19:54:36.402 INFO HikariDataSource - HikariPool-1 - Starting...
+2023-04-29 19:54:36.803 INFO HikariDataSource - HikariPool-1 - Start completed.
+2023-04-29 19:54:36.843 INFO H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:mydatabase'
+2023-04-29 19:54:37.477 INFO VersionPrinter - Flyway Community Edition 7.7.3 by Redgate
+2023-04-29 19:54:37.527 INFO DatabaseType - Database: jdbc:h2:mem:mydatabase (H2 1.4)
+2023-04-29 19:54:37.979 INFO DbValidate - Successfully validated 2 migrations (execution time 00:00.353s)
+2023-04-29 19:54:38.049 INFO JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2023-04-29 19:54:38.178 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:54:38.191 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:54:38.246 INFO DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+2023-04-29 19:54:38.335 INFO DbMigrate - Migrating schema "PUBLIC" to version "1 - schema migration"
+2023-04-29 19:54:38.342 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:54:38.356 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:54:38.433 INFO DbMigrate - Migrating schema "PUBLIC" to version "2 - data migration"
+2023-04-29 19:54:38.435 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:54:38.436 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:54:38.437 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:54:38.438 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:54:38.438 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:54:38.439 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:54:38.440 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:54:38.441 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:54:38.442 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:54:38.443 INFO DefaultSqlScriptExecutor - 1 rows affected
+2023-04-29 19:54:38.445 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:54:38.446 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:54:38.448 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:54:38.451 INFO DefaultSqlScriptExecutor - 0 rows affected
+2023-04-29 19:54:38.519 INFO DbMigrate - Successfully applied 2 migrations to schema "PUBLIC", now at version v2 (execution time 00:00.294s)
+2023-04-29 19:54:38.986 INFO LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-29 19:54:39.168 INFO Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2023-04-29 19:54:39.493 INFO Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-29 19:54:39.809 INFO Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-04-29 19:54:40.962 INFO JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-29 19:54:40.976 INFO LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-29 19:54:42.762 INFO EndpointLinksResolver - Exposing 5 endpoint(s) beneath base path '/actuator'
+2023-04-29 19:54:42.809 INFO TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-29 19:54:42.825 INFO VoteNowApplication - Started VoteNowApplication in 16.183 seconds (JVM running for 18.63)
+2023-04-29 19:54:42.898 INFO [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-29 19:54:42.898 INFO DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-29 19:54:42.900 INFO DispatcherServlet - Completed initialization in 2 ms
+2023-04-29 19:55:55.854 WARN HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m18s775ms).
+2023-04-29 20:19:58.086 WARN HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m25s448ms).
+2023-04-29 21:30:00.604 INFO LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-29 21:30:00.629 INFO HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-29 21:30:00.752 INFO HikariDataSource - HikariPool-1 - Shutdown completed.
