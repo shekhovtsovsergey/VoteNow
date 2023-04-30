@@ -1,0 +1,53 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:mydatabase;MODE=PostgreSQL
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        web-allow-others: true
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.PostgreSQL
+    show-sql: true
+    open-in-view: false
+
+logging:
+  level:
+    root: info
+    org.springframework: info
+
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss.SSS} %level %logger{0} - %msg%n'
+    file: '%d{yyyy-MM-dd HH:mm:ss.SSS} %level %logger{0} - %msg%n'
+
+  file:
+    name: main.log
+    path: /var/logs/main/
+    max-size: 10MB
+    max-history: 5
+    total-size-cap: 50MB
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "logfile"
+          - "health"
+          - "metrics"
+          - "prometheus"
+          - "mappings"
+
+  metrics:
+    export:
+      simple:
+        enabled: true
+  endpoint:
+    health:
+      show-details: always
